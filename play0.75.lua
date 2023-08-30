@@ -83,7 +83,7 @@ local redstoneSide = "back"  -- The side where your redstone line is connected
 local dfpwm = require("cc.audio.dfpwm")
 local decoder = dfpwm.make_decoder()
 
-local bufferSize = 12 * 1024 - 1  -- Adjust buffer size as needed
+local bufferSize = 8 * 1024 - 1  -- Adjust buffer size as needed
 
 local function quadrupleBytes(decodedAudio)
   local quadrupledAudio = {}
